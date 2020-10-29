@@ -31,10 +31,10 @@ clock = pygame.time.Clock()
 ----------------------------------------------------------------------------"""
 
 # Set the background
-background = pygame.image.load("./Projects/bubble_pop/images/background.png")
+background = pygame.image.load("./images/background.png")
 
 # Set the stage
-stage        = pygame.image.load("./Projects/bubble_pop/images/ground.png")
+stage        = pygame.image.load("./images/ground.png")
 stage_size   = stage.get_rect().size
 stage_height = stage_size[1]
 
@@ -43,8 +43,7 @@ stage_height = stage_size[1]
 ----------------------------------------------------------------------------"""
 
 # Set the protagonist
-protagonist = (pygame.image
-               .load("./Projects/bubble_pop/images/character_left.png"))
+protagonist = (pygame.image.load("./images/character_left.png"))
 
 protag_size = protagonist.get_rect().size
 
@@ -68,7 +67,7 @@ protag_speed = 12
 ----------------------------------------------------------------------------"""
 
 # Set up weapons
-weapon      = pygame.image.load("./Projects/bubble_pop/images/spear.png")
+weapon      = pygame.image.load("./images/spear.png")
 weapon_size = weapon.get_rect().size
 
 weapon_width  = weapon_size[0]
@@ -89,10 +88,10 @@ weapon_cnt = 20
 
 # Load images for different sizes of bubbles
 bubble_img = [
-    pygame.image.load("./Projects/bubble_pop/images/bubble1.png"),
-    pygame.image.load("./Projects/bubble_pop/images/bubble2.png"),
-    pygame.image.load("./Projects/bubble_pop/images/bubble3.png"),
-    pygame.image.load("./Projects/bubble_pop/images/bubble4.png"),
+    pygame.image.load("./images/bubble1.png"),
+    pygame.image.load("./images/bubble2.png"),
+    pygame.image.load("./images/bubble3.png"),
+    pygame.image.load("./images/bubble4.png"),
 ]
 
 # Different bubble speed for different sizes
@@ -153,11 +152,11 @@ while running:
         if event.type == pygame.KEYDOWN:
 
             if event.key == pygame.K_LEFT:
-                protagonist = pygame.image.load("./Projects/bubble_pop/images/character_left.png")
+                protagonist = pygame.image.load("./images/character_left.png")
                 protag_to_x -= protag_speed
 
             elif event.key == pygame.K_RIGHT:
-                protagonist = pygame.image.load("./Projects/bubble_pop/images/character_right.png")
+                protagonist = pygame.image.load("./images/character_right.png")
                 protag_to_x += protag_speed
 
             elif event.key == pygame.K_SPACE:
@@ -434,7 +433,7 @@ https://www.hiclipart.com/free-transparent-background-png-clipart-zoldp
 Protagonist image:
 https://www.hiclipart.com/free-transparent-background-png-clipart-dpsig
 
-Bubble imge:
+Bubble image:
 https://www.hiclipart.com/free-transparent-background-png-clipart-isieg
 
 """
