@@ -23,7 +23,7 @@ pip install pygame
 
 ## Usage
 
-Clone the handmotion-control repository in your directory.
+Clone the bubble-pop-game repository in your directory.
 
 ```bash
 git clone https://github.com/byunsy/bubble-pop-game.git
